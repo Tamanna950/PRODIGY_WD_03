@@ -1,0 +1,123 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #0f0f0f;
+    color: #00ff99;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  
+  .tic-tac-toe {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 255, 153, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    border: 2px solid #00ff99;
+  }
+  
+  .two-player-btn{
+    font-size: 3rem;
+    color: #00ff99;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 15px rgba(0, 255, 153, 0.5);
+  }
+
+  .ai-player-btn{
+    font-size: 3rem;
+    color: #00ff99;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 15px rgba(0, 255, 153, 0.5);
+  }
+  
+ 
+  /* Game Board Styling */
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #333333;
+    border: 2px solid #00ff99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00ff99;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .cell:hover {
+    background-color: #282828;
+    box-shadow: 0 0 15px rgba(0, 255, 153, 0.5);
+  }
+  
+  .cell.active {
+    color: #ff0066;
+    text-shadow: 0px 0px 10px #ff0066;
+  }
+  
+  /* Status and Controls */
+  .status, .controls {
+    margin-top: 20px;
+  }
+  
+  #gameStatus {
+    font-size: 1.5rem;
+    color: #00ff99;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 1.1rem;
+    color: #00ff99;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  label input {
+    transform: scale(1.3);
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 12px 25px;
+    background-color: #ff0066;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0px 0px 10px rgba(255, 0, 102, 0.7);
+  }
+  
+  button:hover {
+    background-color: #e6005c;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
